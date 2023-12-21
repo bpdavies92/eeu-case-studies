@@ -21,14 +21,14 @@
           </v-list-item>
 
           <v-list-item variant="plain"  value="dashboard" >
-              <v-btn rounded="10" prepend-icon="mdi-home" elevation="0" variant="text"   stacked>
-                test
+              <v-btn rounded="10" prepend-icon="mdi-book-open-variant" elevation="0" variant="text"   stacked>
+                Guides
               </v-btn>
           </v-list-item>
 
           <v-list-item variant="plain"  value="dashboard" >
-              <v-btn rounded="10" prepend-icon="mdi-home" elevation="0" variant="text"   stacked>
-                test
+              <v-btn rounded="10" prepend-icon="mdi-filter-cog" elevation="0" variant="text"   stacked>
+                Filter
               </v-btn>
           </v-list-item>
 
