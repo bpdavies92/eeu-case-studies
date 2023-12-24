@@ -1,11 +1,12 @@
 <template>
-          <v-sheet color="#fce300" rounded class="pa-3">
-          <iframe class="rounded" width="100%" height="300px" src="https://www.youtube.com/embed/07q6oplTkv0?si=Fco6NbeIJHojwNEF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;     picture-in-picture; web-share" allowfullscreen></iframe>    
+          <v-sheet elevation="5" color="#fce300" rounded class="pa-3">
+         
+            <div v-html="examples.featuredVideo"></div>
 
-          <h3 class="text-h3 mt-1 mb-3">Learning type</h3>
+          <h3 class="text-h3 mt-1 mb-3">{{examples.type}}</h3>
           
-          <v-expansion-panels class="mb-3" theme="dark" color="#303030">
-            <v-expansion-panel>
+          <v-expansion-panels class="mb-3" theme="dark" bg-color="#303030" color="#303030">
+            <v-expansion-panel bg-color="#303030">
               <v-expansion-panel-title>
                 Details
               </v-expansion-panel-title>
@@ -21,12 +22,6 @@
         </v-sheet>  
 </template>
 
-<script>
-export default {
-
-}
+<script setup>
+    const {examples} = defineProps(['examples'])
 </script>
-
-<style>
-
-</style>
