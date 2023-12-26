@@ -1,10 +1,12 @@
 <template>
 
-  <div v-for="n in caseStudies" :key="n">
-    {{ n.name }}
+  <div v-for="(c, i) in sortByTitle" :key="i">
+    {{ c.name }}
   </div>
   <Nav />
   <Hero />
+
+  <!-- {{ sortByTitle }}   -->
   
   
   <!-- <div class="ml-12 mr-12">
@@ -23,9 +25,9 @@
 </div> -->
 
 
-  <div class="ml-12 mr-12 mt-12">
+  <div class="ml-12 mr-12">
 
-    <h2 class="text-h2 mb-6 mt-12">What we do</h2>
+    <h2 class="text-h2 mb-6">What we do</h2>
 
     <v-row>
       <v-col cols="12" sm="12" md="4" v-for="(n, i) in caseStudies" :key="i">
@@ -41,17 +43,31 @@
 </template>
 
 <script setup>
-  import { ref } from "vue"
+  import { computed, ref } from "vue"
   import Hero from "../components/Hero"
   import Nav from "../components/Nav"
   import Card from "../components/Card"
   import ELearningType from "../components/ELearningType"
   import Footer from "../components/Footer"
   import projects from "@/composables/projects"
- 
 
   const { caseStudies } = projects()
 
-  
+  // console.log(caseStudies.value)
+
+  const sortByTitle = computed(() => {
+    return caseStudies.value.sort((a, b) => {
+      const titleA = a.type.toUpperCase();
+      const titleB = b.type.toUpperCase();
+
+      if(titleA < titleB) {
+        return -1
+      } else if (titleA > titleB) {
+        return 1 
+      } else {
+        return 0
+      }
+    })
+  })
 
 </script>

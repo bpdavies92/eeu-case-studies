@@ -11,14 +11,13 @@
                 Details
               </v-expansion-panel-title>
               <v-expansion-panel-text>
-                <p class="text-body-1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam ea maxime beatae quibusdam? Beatae similique incidunt corporis maiores, quo cupiditate nam quidem itaque tenetur optio. Nam illo facilis praesentium consectetur.</p>
+                <p class="text-body-1">{{examples.description}}</p>
               </v-expansion-panel-text>
             </v-expansion-panel>
           </v-expansion-panels>
 
           <v-btn block class="">See more</v-btn>
           
-
         </v-sheet>  
 </template>
 

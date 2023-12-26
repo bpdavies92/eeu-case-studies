@@ -1,5 +1,5 @@
 <template>
-    <v-sheet height="250" rounded="rounded" class="ml-12 mr-12 mb-n12 overflow-hidden" >
+    <v-sheet height="250" rounded="rounded" class="ml-12 mr-12 mb-12 overflow-hidden" >
         <v-img
         class="text-h1 d-flex align-center justify-center pl-12"
         cover

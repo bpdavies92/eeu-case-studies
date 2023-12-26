@@ -28,7 +28,7 @@
 
           <v-list-item variant="plain"  value="dashboard" >
               <v-btn rounded="10" prepend-icon="mdi-filter-cog" elevation="0" variant="text"   stacked>
-                Filter
+                Resource finder
               </v-btn>
           </v-list-item>
 
