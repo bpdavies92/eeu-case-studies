@@ -16,11 +16,14 @@
             </v-expansion-panel>
           </v-expansion-panels>
 
-          <v-btn block class="">See more</v-btn>
+          <v-btn block @click="router.push({name: 'LearningType', params: {id: `${examples.type.toLowerCase()}`}})">Learn more</v-btn>
           
         </v-sheet>  
 </template>
 
 <script setup>
+    import projects from '@/composables/projects';
+    import { useRouter } from 'vue-router';
+    const router = useRouter()
     const {examples} = defineProps(['examples'])
 </script>

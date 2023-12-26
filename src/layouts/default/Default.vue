@@ -15,7 +15,7 @@
           nav
         >
           <v-list-item variant="plain"  value="dashboard" >
-              <v-btn rounded="10" prepend-icon="mdi-home" elevation="0" variant="text"   stacked>
+              <v-btn @click="router.push({name: 'Home'})" rounded="10" prepend-icon="mdi-home" elevation="0" variant="text" stacked>
                 Home
               </v-btn>
           </v-list-item>
@@ -44,4 +44,7 @@
 <script setup>
   import DefaultBar from './AppBar.vue'
   import DefaultView from './View.vue'
+  import { useRouter } from 'vue-router';
+
+  const router = useRouter()
 </script>

@@ -36,10 +36,10 @@
   <v-row class="ma-6">
         <v-col cols="12" md="12" sm="12">
             <div class="d-flex justify-center">
-                <v-tabs grow class="overflow-hidden rounded-pill" bg-color="#f6f6f6">
+                <v-tabs  density="comfortable" grow hide-slider class="overflow-hidden rounded-pill" bg-color="#f6f6f6">
                     <v-tab color="#303030" class="overflow-hidden rounded-pill no-underline" >Description</v-tab>
-                    <v-tab  class="overflow-hidden rounded-pill">TWO</v-tab>
-                    <v-tab  class="overflow-hidden rounded-pill">THREE</v-tab>
+                    <v-tab  class="overflow-hidden rounded-pill">Videos</v-tab>
+                    <v-tab  class="overflow-hidden rounded-pill">Contact</v-tab>
                 </v-tabs>
             </div>
         </v-col>
@@ -47,7 +47,7 @@
 
     <v-row class="ma-6">
         <v-col cols="12" sm="12" md="6">
-        dfd
+
         </v-col>
         <v-col cols="12" sm="12" md="6">
             dfdf
@@ -74,7 +74,6 @@ import Nav from '@/components/Nav.vue'
         return one[0]
     })
 
-    console.log(projectType.value)
 
 </script>
 
