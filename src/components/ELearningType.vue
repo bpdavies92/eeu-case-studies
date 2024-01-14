@@ -8,7 +8,7 @@
           <v-expansion-panels class="mb-3" theme="dark" bg-color="#303030" color="#303030">
             <v-expansion-panel bg-color="#303030">
               <v-expansion-panel-title>
-                Details
+                Description
               </v-expansion-panel-title>
               <v-expansion-panel-text>
                 <p class="text-body-1">{{examples.description}}</p>

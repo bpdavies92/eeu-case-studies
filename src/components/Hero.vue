@@ -5,8 +5,7 @@
         cover
         src="../assets/images/Hero/hero-banner.png"
         >
-        <h2 class="text-h1">Title</h2>  
-        <p class="text-body-1 mr-12">Add some description text</p>
+        <h2 class="text-h1">Educational Enhancement Unit</h2>  
     </v-img>
     </v-sheet>
 </template>

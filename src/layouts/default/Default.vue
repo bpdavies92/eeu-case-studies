@@ -22,7 +22,7 @@
 
           <v-list-item variant="plain"  value="dashboard" >
               <v-btn rounded="10" prepend-icon="mdi-book-open-variant" elevation="0" variant="text"   stacked>
-                Guides
+                <span class="block">Commu</span>nities
               </v-btn>
           </v-list-item>
 
